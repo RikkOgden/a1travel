@@ -14,6 +14,13 @@ The company wanted all of the search fields to be contained in a single row on d
 <a href="https://rikkogden.github.io/a1travel/product-filter.html">View Example on Github Pages</a>
 
 Fully responsive with: -
-1. Slide-in multi-level product filter for mobile which expands to a full visible sidebar in desktop based on standard design principles. Complete with count indicators (desktop) for collapsed filter groups to assist users in visually identifying that X number of filters are applied to a group.
-2. Simplified product in mobile view with a focus on image and price that expands to a tabbed interface in desktop, including image gallery and tripadvisor info.
-3. slide-in search form in mobile which expands to full-with in desktop and sits at the top of the page to both aid users in seeing current search terms. Room and persons interface expands on click to allow for room number required and child information
+<strong>Desktop Version:</strong>
+<p>
+Adopts a standard-design collapsible filter. If a category is collapsed, we show a little indicator to display a count of all checked elements in the category to serve as a visual aid to inform users that there are checked items.
+</p>
+
+<strong>Mobile Version:</strong>
+<p>Filter initially hidden off-canvas and slides in on button click event.</p>
+<p>Slide panel lists only product categories and any checked products are listed below. (the list of checked item values would be done by the dev team)<p>
+<p>Clicking a category would activate another slide-in element to display it's child products for selection.<p>
+<p>The idea was that we separate filterable products into easier to digest chunks in mobile, rather than display one long list as per the desktop version.
