@@ -167,8 +167,8 @@ embed, img, object, video {
     width: 100%}
 @font-face {
     font-family: 'a1travel2016';
-    src: url("/assets/fonts/a1travel2016/a1travel2016.eot?dlbtp0");
-    src: url("/assets/fonts/a1travel2016/a1travel2016.eot?dlbtp0#iefix") format("embedded-opentype"), url("/assets/fonts/a1travel2016/a1travel2016.ttf?dlbtp0") format("truetype"), url("/assets/fonts/a1travel2016/a1travel2016.woff?dlbtp0") format("woff"), url("/assets/fonts/1travel2016/a1travel2016.svg?dlbtp0#a1travel2016") format("svg");
+    src: url("assets/fonts/a1travel2016/a1travel2016.eot?dlbtp0");
+    src: url("assets/fonts/a1travel2016/a1travel2016.eot?dlbtp0#iefix") format("embedded-opentype"), url("assets/fonts/a1travel2016/a1travel2016.ttf?dlbtp0") format("truetype"), url("assets/fonts/a1travel2016/a1travel2016.woff?dlbtp0") format("woff"), url("assets/fonts/1travel2016/a1travel2016.svg?dlbtp0#a1travel2016") format("svg");
     font-weight: normal;
     font-style: normal;
 }
