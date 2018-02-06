@@ -11,7 +11,7 @@
 *.sass-cache
 node_modules/
 app/
-app/widgets/
+gulp/
 *.tmp/
 source_images/
 gulpfile.js
