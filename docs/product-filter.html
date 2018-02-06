@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,100,300,500,700' rel='stylesheet' type='text/css'>
+  <title>A1travel | Responsive Product Filter UI</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="a1travel template - holiday results page">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#ffffff">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="assets/styles/a1travel-framework.css">
+</head>
+
+<body>
+  <section class="row">
+  <div class="gridContainer clearfix">
+  <div class="left columns_three zeroMargin_desktop">
+
+    <div class="filters grey">
+
+    <div class="hide_mobile mgnB clearfix rnd filter-header-main">
+    <div class="left">
+    <span class="h4 v-strong ">Filters</span>
+    </div>
+
+    <div class="right"><a class="button xsm">Clear All</a></div>
+    </div>
+
+
+    <div class="input-group button-group pill lg mgnB full-width">
+    <div id="dvSearchHotelName" class="clearfix relative">
+    <input type="text" placeholder="Type hotel name..." class="full-width" style="width:100%; display:block;">
+    <a id="lnkRemoveHotel" class="absolute" style="top:0; right:0; z-index:2" onclick="javascript:return checkhotelname();"><i class="icon-x" aria-hidden="true"></i></a>
+    </div>
+    </div>
+
+  <!-- FILTERS -->
+  <aside class="side-panel product-filter">
+
+  <div class="f-header clearfix hide_desktop">
+  <h4 class="left x-strong">Filter Results</h4>
+  <a class="button  green close-filter right"><i class="icon-checkmark" aria-hidden="true"></i></a>
+  </div>
+
+  <div class="f-wrapper ">
+
+<!--PRODUCT CATEGORY -->
+  <div class="f-section expanded">
+  <a class="f-section-toggle clearfix">
+  <div class="one-row">
+  <span class="left"><h4>Product Category 1</h4></span>
+  <span class="right"><i class="icon-chevron-right" aria-hidden="true"></i></span>
+</div>
+  <div><small class="txt-green">selection, selection</small></div>
+  </a>
+
+  <div class="f-subsection ">
+  <div class="f-subsection-header mobile clearfix">
+  <h4 class="left">Product Category 1</h4> <a class="button green f-section-done right">DONE</a>
+  </div>
+  <div class="f-subsection-desktop-header-wrapper">
+  <div class="count-tag"><span class="count-value">0</span></div>
+
+  <div class="f-subsection-header desktop clearfix" >
+  <h4 class="left ">Product Category 1</h4><i class="icon-chevron-down" aria-hidden="true"></i>
+  </div>
+  </div>
+
+    <div class="expandable-desktop">
+    <div class="input-group bar selected">
+    <input id="filter-1" type="checkbox" name="CheckBoxGroup_filter-1">
+    <label for="filter-1" class="clearfix">
+    <span class="product">Filter Value </span> <span class="check right"></span>
+    <span class="count">(9)</span>
+  </label>
+
+    <input id="filter-2" type="checkbox" name="CheckBoxGroup_filter-2">
+    <label for="filter-2" class="clearfix">
+    <span class="product">Filter Value </span><span class="check right"></span><span class="count">(9)</span>
+    </label>
+
+
+    <input id="filter-3" type="checkbox" name="CheckBoxGroup_filter-3">
+    <label for="filter-3" class="clearfix">
+    <span class="product">Filter Value </span><span class="check right"></span><span class="count">(9)</span>
+    </label>
+
+  </div>
+  </div>
+
+</div>
+</div>
+<!-- /PRODUCT CATEGORY -->
+
+<!--PRODUCT CATEGORY -->
+  <div class="f-section expanded">
+  <a class="f-section-toggle clearfix">
+  <div class="one-row">
+  <span class="left"><h4>Product Category 2</h4></span>
+  <span class="right"><i class="icon-chevron-right" aria-hidden="true"></i></span>
+</div>
+  <div><small class="txt-green">selection, selection</small></div>
+  </a>
+
+  <div class="f-subsection ">
+  <div class="f-subsection-header mobile clearfix">
+  <h4 class="left">Product Category 2</h4> <a class="button green f-section-done right">DONE</a>
+  </div>
+  <div class="f-subsection-desktop-header-wrapper">
+  <div class="count-tag"><span class="count-value">0</span></div>
+
+  <div class="f-subsection-header desktop clearfix" >
+  <h4 class="left ">Product Category 2</h4><i class="icon-chevron-down" aria-hidden="true"></i>
+  </div>
+  </div>
+
+    <div class="expandable-desktop">
+    <div class="input-group bar selected">
+    <input id="filter-1-1" type="checkbox" name="CheckBoxGroup_filter-1-1">
+    <label for="filter-1-1" class="clearfix">
+    <span class="product">Filter Value </span> <span class="check right"></span>
+    <span class="count">(9)</span>
+  </label>
+
+    <input id="filter-2-1" type="checkbox" name="CheckBoxGroup_filter-2-1">
+    <label for="filter-2-1" class="clearfix">
+    <span class="product">Filter Value </span><span class="check right"></span><span class="count">(9)</span>
+    </label>
+
+
+    <input id="filter-3-1" type="checkbox" name="CheckBoxGroup_filter-3-1">
+    <label for="filter-3-1" class="clearfix">
+    <span class="product">Filter Value </span><span class="check right"></span><span class="count">(9)</span>
+    </label>
+
+  </div>
+  </div>
+
+</div>
+</div>
+<!-- /PRODUCT CATEGORY -->
+
+<!--PRODUCT CATEGORY -->
+  <div class="f-section">
+  <a class="f-section-toggle clearfix">
+  <div class="one-row">
+  <span class="left"><h4>Product Category 3</h4></span>
+  <span class="right"><i class="icon-chevron-right" aria-hidden="true"></i></span>
+</div>
+  <div><small class="txt-green">selection, selection</small></div>
+  </a>
+
+  <div class="f-subsection ">
+  <div class="f-subsection-header mobile clearfix">
+  <h4 class="left">Product Category 3</h4> <a class="button green f-section-done right">DONE</a>
+  </div>
+  <div class="f-subsection-desktop-header-wrapper">
+  <div class="count-tag"><span class="count-value">0</span></div>
+
+  <div class="f-subsection-header desktop clearfix" >
+  <h4 class="left ">Product Category 3</h4><i class="icon-chevron-down" aria-hidden="true"></i>
+  </div>
+  </div>
+
+    <div class="expandable-desktop">
+    <div class="input-group bar selected">
+    <input id="filter-1-3" type="checkbox" name="CheckBoxGroup_filter-1-3" checked>
+    <label for="filter-1-3" class="clearfix">
+    <span class="product">Filter Value </span> <span class="check right"></span>
+    <span class="count">(9)</span>
+  </label>
+
+    <input id="filter-2-3" type="checkbox" name="CheckBoxGroup_filter-2-3" checked>
+    <label for="filter-2-3" class="clearfix">
+    <span class="product">Filter Value </span><span class="check right"></span><span class="count">(9)</span>
+    </label>
+
+
+    <input id="filter-3-3" type="checkbox" name="CheckBoxGroup_filter-3-3">
+    <label for="filter-3-3" class="clearfix">
+    <span class="product">Filter Value </span><span class="check right"></span><span class="count">(9)</span>
+    </label>
+
+  </div>
+  </div>
+
+</div>
+</div>
+<!-- /PRODUCT CATEGORY -->
+
+  </div>
+  </aside>
+  <!-- / END FILTERS-->
+</div>
+</div>
+
+<!-- RIGHT COLUMN-->
+<div class="left columns_nine">
+
+<!-- MOBILE FILTER BUTTONS -->
+<div class="mgnB-lg hide_desktop clearfix">
+
+<a class="button full-width brand-1 show-filter" role="button">
+<i class="icon-filters" aria-hidden="true"></i>
+<span> FILTER RESULTS</span>
+</a>
+
+</div>
+<!-- MOBILE FILTER BUTTONS -->
+
+
+<h3 class="txt-brand-1">RESPONSIVE PRODUCT FILTER UI for A1TRAVEL</h3>
+<h6>Resize browser to see how the mobile version looks and functions.</h6>
+<p>
+A fully responsive UI solution to what would be an extensive product filter. CSS and JQuery.
+</p>
+
+<hr class="hr">
+
+<h5 class="txt-brand-1">Desktop Version:</h5>
+<div class="txt-light">
+<p>Adopts a standard-design collapsible filter. If a category is collapsed, we show a little indicator to display a count of all checked elements in the category to serve as a visual aid to inform users that there are checked items.</p>
+</div>
+
+<h5 class="txt-brand-1">Mobile Version:</h5>
+<div class="txt-light">
+<p>Filter initially hidden off-canvas and slides in on button click event.</p>
+<p>Slide panel lists only product categories and any checked products are listed below. (the list of checked item values would be done by the dev team)<p>
+<p>Clicking a category would activate another slide-in element to display it's child products for selection.<p>
+<p>The idea was that we separate filterable products into easier to digest chunks in mobile, rather than display one long list as per the desktop version.
+</div>
+
+
+
+
+</div>
+</div>
+</section>
+</body>
+<script>
+$( document).ready(function()  {
+//1
+// ON PAGE LOAD - WE CHECK TO SEE IF ANY PRE-CHECKED FILTERS.
+// IF WE DO - THEN FOR EACH FILTER SECTION, COUNT HOW MANY ARE CHECKED AND ADD THIS VALUE TO THE COUNT TAG
+$(".f-section" ).each(function(AllFilterCountChecked) {
+var SectionCheckedValue 	= $(this).find('input:checked').length; //count checked in each f-section
+var CountWrapper  			= $(this).find('.count-tag');			//this is the counter container
+var CountValueSpan  		= $(this).find('.count-value');			//this is the span inside the container where we will show the count value
+$(CountValueSpan).html(SectionCheckedValue);						//append the count value to the coun tag inner span.
+//if the count is zero we dont show the count tag at all.
+if (SectionCheckedValue == 0) {
+(CountWrapper).hide();
+}
+else {
+(CountWrapper).show();
+}
+});
+});
+
+//2
+// We do the same as above but this time each time a filter is checked/unchecked so that the count tag is always up-to-date with the correct value.
+$(".f-subsection input").on("click", function(ThisFilterCountChecked){
+var CheckedValue = ($(this).parent().parent().find('input:checked').length); 	//count checked only for this f-section
+var CountWrapper  = $(this).parent().parent().parent().find('.count-tag');		//span inside the container where we will show the count value
+var CountValueSpan = $(this).parent().parent().parent().find('.count-value');	//append the count value to the coun tag inner span.
+
+$(CountValueSpan).html(CheckedValue); //append the count value to the coun tag inner span.
+
+//if the count is zero we dont show the count tag at all.
+if (CheckedValue == 0) {
+$(CountWrapper).hide();
+}
+else {
+$(CountWrapper).show();
+}
+preventDefault();
+});
+
+//subsection toggles
+$(".f-section-toggle").on("click", function(){
+      var target 	= $(this).parent().find('*');
+      target.toggleClass("selected");
+    preventDefault();
+    });
+
+$(".f-section-done").on("click", function(){
+      var target 	= $(this).parent().parent().parent().find('*');
+      target.toggleClass("selected");
+    preventDefault();
+    });
+
+$(".f-subsection-header.desktop").on("click", function(){
+      var target 	= $(this).parent().parent().parent();
+      target.toggleClass("expanded");
+    preventDefault();
+});
+
+function showmobilefilter(){
+var curScrollTop = $(window).scrollTop();
+$(".product-filter").removeClass("active");
+$(".product-filter").addClass("active");
+$("html").removeClass("no-scroll");
+$("html").addClass("no-scroll").css('top', '-' + curScrollTop + 'px');
+showmobilefilter.preventDefault();
+}
+
+function hidemobilefilter(){
+var curScrollTop = $(window).scrollTop();
+$(".product-filter").removeClass("active");
+$("html").removeClass("no-scroll")
+hidemobilefilter.preventDefault();
+}
+
+$(".show-filter").click(showmobilefilter);
+$(".close-filter").click(hidemobilefilter);
+
+</script>
+</html>

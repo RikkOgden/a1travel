@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,100,300,500,700' rel='stylesheet' type='text/css'>
+  <title>A1travel | Responsive Holiday Search UI</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="a1travel template - holiday results page">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#ffffff">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="assets/styles/a1travel-framework.css">
+  <style>
+.hero-panel {background-position: top center; background: url(assets/images/bkg-summer-sale-2018-fw.jpg) no-repeat; background-size: 100% auto; background-color: #fff;}
+</style>
+</head>
+
+<body>
+<section class="row">
+<div class="gridContainer clearfix bg-white ds-lt-md hero-panel">
+
+<div class="row">
+<img class="anim-fade-in-down" src="assets/images/fg-summer-sale-2018-fw.png" alt="Extend your summer with our late summer and early winter sale" />
+</div>
+
+
+
+
+<search class="sb1-search">
+  <!--SEARCH FORM-->
+<div class="clearfix" style="margin-bottom:-2px;">
+<div class="left columns_eight zeroMargin_desktop">
+<div id="dvTabs" class="search-tabs full-width">
+
+<div class="sb1-search-tabs clearfix button-group  full-width tabs searchtabs  brand-1" >
+<a href="#FH" class="current" onclick="javascript:return setTabIndex(0);">
+<div class="pad">
+<i class="icon-airplane" aria-hidden="true"></i> + <i class="icon-bed" aria-hidden="true"></i>
+<div class="hide_desktop mgnB-sm"></div>
+Flight &amp; Hotel
+</div>
+</a>
+<a href="#H" onclick="javascript:return setTabIndex(1);">
+<div class="pad">
+<i class="icon-bed" aria-hidden="true"></i>
+<div class="hide_desktop mgnB-sm"></div>
+Hotel Only
+</div>
+</a>
+<a href="#F" onclick="javascript:return setTabIndex(2);">
+<div class="pad">
+<i class="icon-airplane" aria-hidden="true"></i>
+<div class="hide_desktop mgnB-sm"></div>
+Flights
+</div>
+</a>
+</div>
+
+</div>
+</div>
+<div class="left columns_four hide_mobile txt-right">
+<div class="txt-md">
+<a class="button sm brand-1">
+Large Group Bookings
+</a>
+</div>
+</div>
+</div>
+
+
+  <div class="bg-brand-1 sb1-search pad-md">
+
+  <div id="content">
+
+
+
+  <div id="FH" class="clearfix sb1-search-inner current"><!--FH TAB-->
+
+
+  			<div class="search-item to">
+  			<div class="label"><i class="icon-palmtree" aria-hidden="true"></i> Travel To</div>
+  			<input type="text" placeholder="Type Destination"><br>
+  			</div>
+
+
+              <div class="search-item from">
+  			<div class="label"><i class="icon-airplane" aria-hidden="true"></i> Flying from</div>
+  			<select>
+  			<option>London Gatwick (LGW)</option>
+  			<option>Manchester (MAN)</option>
+  			</select>
+  			</div>
+
+              <div class="search-item date">
+  			<div class="label"><i class="icon-calendar" aria-hidden="true"></i> Departure Date</div>
+  			<input type="text" value="Mon 23 Jun 2016">
+  			</div>
+
+  			<div class="search-item nights">
+  			<div class="label"><i class="icon-moon" aria-hidden="true"></i> Nights</div>
+  			<select>
+  			<option>7</option>
+  			<option>10</option>
+              </select>
+  			</div>
+
+
+              <!-- START ROOM CONFIG FH -->
+              <div class="search-item room-config" >
+
+
+  <div class="label"><i class="icon-bed" aria-hidden="true"></i> Rooms and <i class="icon-user" aria-hidden="true"></i> People</div>
+  <div class="passengers clearfix">
+  <div class="rooms">Rooms: <span class="txt_brand_1">1</span></div>
+  <div class="adults">Adults: <span class="txt_brand_1">2</span></div>
+  <div class="children">Children: <span class="txt_brand_1">0</span></div>
+  <div class="arrow"><i class="icon-chevron-down" aria-hidden="true"></i></div>
+  </div>
+
+  <div style="position:relative; width:100%">
+
+  <!-- START ROOM CONFIG INTERFACE -->
+  <div class="room-configurations">
+  <div class="inner">
+
+  <!--SELECT ROOM NUMBER -->
+  <div class="clearfix">
+  	<div class="col-rooms clearfix">
+       			<div class="room-number-label">
+                 <strong>Rooms:</strong>
+                  </div>
+      </div>
+
+      <div class="col-pax clearfix">
+     <div class="search-item">
+
+                  <select>
+                  <option>1</option>
+                  <option>2</option>
+                  </select>
+                  </div>
+      </div>
+
+      <div class="right clearfix hide_mobile"><a class="button green rooms-done"><i class="icon-checkmark" aria-hidden="true"></i> DONE</a></div>
+  </div>
+  <!--SELECT ROOM NUMBER -->
+
+  <!--ROOM # CONFIG ROW -->
+  <div class="clearfix room-row">
+  	<div class="col-rooms clearfix">
+       			<div class="room-number">
+                  <strong>Room 1:</strong>
+                  </div>
+      </div>
+
+      <div class="col-pax clearfix">
+          <div class="search-item" >
+              <div class="label">Adults</div>
+              <select>
+              <option>1</option>
+              <option>2</option>
+              </select>
+          </div>
+
+            <div class="search-item">
+              <div class="label">Children (0-12 yrs)</div>
+              <select>
+              <option>1</option>
+              <option>2</option>
+              </select>
+          </div>
+
+      </div>
+
+      <div class="col-ages">
+      <div class="label">Child ages on date of return:</div>
+
+      <div class="clearfix">
+      <div class="search-item">
+      <select>
+              <option></option>
+              <option>1</option>
+              <option>2</option>
+              </select>
+      </div>
+
+            <div class="search-item">
+
+              <select>
+              <option></option>
+              <option>1</option>
+              <option>2</option>
+              </select>
+          </div>
+
+
+
+         </div>
+
+      </div>
+  </div>
+  <!--ROOM # CONFIG ROW -->
+
+  <!--LAST ROW -->
+
+  <div class="clearfix room-row">
+  <div class="left hide_desktop">
+  <a class="button green rooms-done"><i class="icon-checkmark" aria-hidden="true"></i> DONE</a>
+  </div>
+
+  <div class="right txt_brand_1">
+  <div>Have a Large Group?</div>
+  <small>Call Our Group Bookings Hotline on 0208 548 3048</small>
+  </div>
+  </div>
+
+  </div>
+  </div>
+  <!-- END ROOM CONFIG INTERFACE -->
+
+  </div>
+  </div>
+  <!-- END ROOM CONFIG FH -->
+
+
+  <div class="search-item submit">
+              <a class="button search" href="holidayresults3.aspx">
+              SEARCH <i class="icon-chevron-right" aria-hidden="true"></i></a>
+  </div>
+
+
+
+  </div><!-- /FH TAB-->
+
+
+
+  <div id="H" class="clearfix sb1-search-inner"><!--H TAB-->
+
+
+  			<div class="search-item to">
+  			<div class="label"><i class="icon-palmtree" aria-hidden="true"></i> Travel To</div>
+  			<input type="text" placeholder="Type Destination"><br>
+  			</div>
+
+
+              <div class="search-item date">
+  			<div class="label"><i class="icon-calendar" aria-hidden="true"></i> Departure Date</div>
+  			<input type="text" value="Mon 23 Jun 2016">
+  			</div>
+
+  			<div class="search-item nights">
+  			<div class="label"><i class="icon-moon" aria-hidden="true"></i> Nights</div>
+  			<select>
+  			<option>7</option>
+  			<option>10</option>
+              </select>
+  			</div>
+
+
+              <!-- START ROOM CONFIG FH -->
+              <div class="search-item room-config" >
+
+
+  <div class="label"><i class="icon-bed" aria-hidden="true"></i> Rooms and <i class="icon-user" aria-hidden="true"></i> People</div>
+  <div class="passengers clearfix">
+  <div class="rooms">Rooms: <span class="txt_brand_1">1</span></div>
+  <div class="adults">Adults: <span class="txt_brand_1">2</span></div>
+  <div class="children">Children: <span class="txt_brand_1">0</span></div>
+  <div class="arrow"><i class="icon-chevron-down" aria-hidden="true"></i></div>
+  </div>
+
+  <div style="position:relative; width:100%">
+
+  <!-- START ROOM CONFIG INTERFACE -->
+  <div class="room-configurations">
+  <div class="inner">
+
+  <!--SELECT ROOM NUMBER -->
+  <div class="clearfix">
+  	<div class="col-rooms clearfix">
+       			<div class="room-number-label">
+                 <strong>Rooms:</strong>
+                  </div>
+      </div>
+
+      <div class="col-pax clearfix">
+     <div class="search-item">
+
+                  <select>
+                  <option>1</option>
+                  <option>2</option>
+                  </select>
+                  </div>
+      </div>
+
+      <div class="col-ages">
+
+      </div>
+  </div>
+  <!--SELECT ROOM NUMBER -->
+
+  <!--ROOM # CONFIG ROW -->
+  <div class="clearfix room-row">
+  	<div class="col-rooms clearfix">
+       			<div class="room-number">
+                  <strong>Room 1:</strong>
+                  </div>
+      </div>
+
+      <div class="col-pax clearfix">
+          <div class="search-item" >
+              <div class="label">Adults</div>
+              <select>
+              <option>1</option>
+              <option>2</option>
+              </select>
+          </div>
+
+            <div class="search-item">
+              <div class="label">Children (0-12 yrs)</div>
+              <select>
+              <option>1</option>
+              <option>2</option>
+              </select>
+          </div>
+
+      </div>
+
+      <div class="col-ages">
+      <div class="label">Child ages on date of return:</div>
+
+      <div class="clearfix">
+      <div class="search-item">
+      <select>
+              <option></option>
+              <option>1</option>
+              <option>2</option>
+              </select>
+      </div>
+
+            <div class="search-item">
+
+              <select>
+              <option></option>
+              <option>1</option>
+              <option>2</option>
+              </select>
+          </div>
+
+            <div class="search-item">
+
+              <select>
+              <option></option>
+              <option>1</option>
+              <option>2</option>
+              </select>
+          </div>
+
+            <div class="search-item">
+
+              <select>
+              <option></option>
+              <option>1</option>
+              <option>2</option>
+              </select>
+          </div>
+
+              <div class="search-item">
+
+              <select>
+              <option></option>
+              <option>1</option>
+              <option>2</option>
+              </select>
+          </div>
+
+         </div>
+
+      </div>
+  </div>
+  <!--ROOM # CONFIG ROW -->
+
+  <!--LAST ROW -->
+
+  <div class="clearfix room-row">
+  <div class="left">
+  <a class="button green rooms-done"><i class="icon-checkmark" aria-hidden="true"></i> DONE</a>
+  </div>
+
+  <div class="right txt_brand_1">
+  <div>Have a Large Group?</div>
+  <small>Call Our Group Bookings Hotline on 0208 548 3048</small>
+  </div>
+  </div>
+
+  </div>
+  </div>
+  <!-- END ROOM CONFIG INTERFACE -->
+
+  </div>
+  </div>
+  <!-- END ROOM CONFIG FH -->
+
+
+  <div class="search-item submit">
+              <a class="button search" href="holidayresults.aspx">
+              SEARCH <i class="icon-chevron-right" aria-hidden="true"></i></a>
+  </div>
+
+
+
+
+  </div><!-- /H TAB-->
+
+
+  <div id="F" class="clearfix sb1-search-inner"><!--F TAB-->
+
+
+  			<div class="search-item to">
+  			<div class="flex">
+  			<div class="label"><i class="icon-palmtree" aria-hidden="true"></i> Travel To</div>
+  			</div>
+  			<input type="text" placeholder="Type Destination"><br>
+  			</div>
+
+
+              <div class="search-item from">
+  			<div class="label"><i class="icon-airplane" aria-hidden="true"></i> Flying from</div>
+  			<select>
+  			<option>London Gatwick (LGW)</option>
+  			<option>Manchester (MAN)</option>
+  			</select>
+  			</div>
+
+
+
+  			<div class="search-item date">
+  			<div class="label"><i class="icon-calendar" aria-hidden="true"></i> Departure Date</div>
+  			<input type="text" value="Mon 23 Jun 2016">
+  			</div>
+  			<div class="search-item nights">
+  			<div class="label"><i class="icon-moon" aria-hidden="true"></i> Nights</div>
+  			<select>
+  			<option>7</option>
+  			<option>10</option>
+
+  			</select>
+  			</div>
+
+              <div class="search-item room-config" >
+
+
+
+
+
+
+
+  <div class="label">
+  <i class="icon-user" aria-hidden="true"></i> People
+  </div>
+  <div class="passengers clearfix">
+  <div class="adults">Adults: <span class="txt_brand_1">2</span></div>
+  <div class="children">Children: <span class="txt_brand_1">0</span></div>
+  <div class="arrow"><i class="icon-chevron-down" aria-hidden="true"></i></div>
+  </div>
+
+  <div style="position:relative; width:100%">
+  <div class="room-configurations">
+  <div class="inner">
+
+
+
+  <!--ROOM # CONFIG ROW -->
+  <div class="clearfix room-row">
+
+
+      <div class="col-pax clearfix">
+          <div class="search-item" >
+              <div class="label">Adults</div>
+              <select>
+              <option>1</option>
+              <option>2</option>
+              </select>
+          </div>
+
+            <div class="search-item">
+              <div class="label">Children (0-12 yrs)</div>
+              <select>
+              <option>1</option>
+              <option>2</option>
+              </select>
+          </div>
+
+      </div>
+
+      <div class="col-ages">
+      <div class="label">Child ages on date of return:</div>
+
+      <div class="clearfix">
+      <div class="search-item">
+      <select>
+              <option></option>
+              <option>1</option>
+              <option>2</option>
+              </select>
+      </div>
+
+            <div class="search-item">
+
+              <select>
+              <option></option>
+              <option>1</option>
+              <option>2</option>
+              </select>
+          </div>
+
+            <div class="search-item">
+
+              <select>
+              <option></option>
+              <option>1</option>
+              <option>2</option>
+              </select>
+          </div>
+
+            <div class="search-item">
+
+              <select>
+              <option></option>
+              <option>1</option>
+              <option>2</option>
+              </select>
+          </div>
+
+              <div class="search-item">
+
+              <select>
+              <option></option>
+              <option>1</option>
+              <option>2</option>
+              </select>
+          </div>
+
+         </div>
+
+      </div>
+  </div>
+  <!--ROOM # CONFIG ROW -->
+
+
+
+
+  <!--LAST ROW -->
+
+  <div class="clearfix room-row">
+  <div class="left">
+  <a class="button green rooms-done"><i class="icon-checkmark" aria-hidden="true"></i> DONE</a>
+  </div>
+
+  <div class="right txt_brand_1">
+  <div>Have a Large Group?</div>
+  <small>Call Our Group Bookings Hotline on 0208 548 3048</small>
+  </div>
+  </div>
+
+  </div>
+  </div>
+  </div>
+  </div>
+
+<div class="search-item submit">
+              <a class="button search">
+              SEARCH <i class="icon-chevron-right" aria-hidden="true"></i></a>
+</div>
+</div><!-- /F TAB-->
+</div>
+</div>
+
+  <!--SEARCH FORM-->
+</search>
+
+<!--USPS -->
+<div class="row">
+
+<div class="clearfix  center">
+<div class="left columns_five zeroMargin_desktop ">
+<div class="left columns_six nostack zeroMargin_desktop clearfix padT-md padB-md">
+<div class="h1"><i class="icon-atol txt-brand-1" aria-hidden="true" style="font-size:50px;"></i></div>
+<div class="">
+<a class="h6 v-strong txt-link" data-fancybox data-src="#atolinfo" href="javascript:;">ATOL Protected</a>
+<div class="txt-md">Your money is safe with us</div>
+</div>
+</div>
+
+<div class="left columns_six nostack clearfix padT-md padB-md">
+<div class="h1"><span class="v-strong txt-brand-1" style="font-size:50px; line-height:1;">0%</span></div>
+<div class="">
+<a class="h6 v-strong txt-link" data-fancybox data-src="#lowdeposits" href="javascript:;">Flexible Payments</a>
+<div class="txt-md">Deposits from just &pound;49<span class-"txt-sm">pp</span></div>
+</div>
+</div>
+</div>
+
+<div class="left columns_seven clearfix ">
+
+<div class="mgnT hide_desktop"></div>
+
+<!-- TrustBox widget - Carousel -->
+<div class="trustpilot-widget" data-locale="en-US" data-template-id="53aa8912dec7e10d38f59f36" data-businessunit-id="4d80affd00006400050ef6d7" data-style-height="130px" data-style-width="100%" data-theme="light" data-stars="5"><a href="https://www.trustpilot.com/review/www.a1travel.com" target="_blank">Trustpilot</a> </div>
+<!-- End TrustBox widget -->
+</div>
+
+
+</div>
+</div>
+<!-- / END USPS -->
+
+</div>
+</section>
+
+<script>
+//TABS
+$('.sb1-search-tabs a').click(function(e){
+
+    $('.sb1-search-tabs a, #content .current').removeClass('current');
+    $(this).parent().addClass('current');
+  $(this).addClass('current');
+    var currentTab = $(this).attr('href');
+    $(currentTab).addClass('current');
+    e.preventDefault();
+
+});
+
+
+$('.passengers').click(function(e){
+$('.room-configurations').addClass('active');
+$('.passengers').addClass('active');
+e.preventDefault();
+});
+
+$('.rooms-done').click(function(e){
+$('.room-configurations').removeClass('active');
+$('.passengers').removeClass('active');
+e.preventDefault();
+});
+</script>
+</body>
+
+</html>

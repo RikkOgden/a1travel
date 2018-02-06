@@ -10,9 +10,11 @@
 *~
 *.sass-cache
 node_modules/
+app/
 app/widgets/
 *.tmp/
 source_images/
+gulpfile.js
 
 # OS or Editor folders
 .DS_Store
