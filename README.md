@@ -13,7 +13,6 @@ The company wanted all of the search fields to be contained in a single row on d
 
 <a href="https://rikkogden.github.io/a1travel/product-filter.html">View Example on Github Pages</a>
 
-Fully responsive with: -
 <strong>Desktop Version:</strong>
 <p>
 Adopts a standard-design collapsible filter. If a category is collapsed, we show a little indicator to display a count of all checked elements in the category to serve as a visual aid to inform users that there are checked items.
