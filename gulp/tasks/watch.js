@@ -7,30 +7,14 @@ gulp.task('watch', function(){
   browserSync.init({
     notify: false,
     server: {
-      baseDir: "docs"
+      baseDir: "app"
     }
   });
 
 
-watch('./docs/index.html', function(){
+watch('./app/*', function(){
 browserSync.reload();
-})
-
-watch('./docs/assets/styles/**/*.css', function(){
-gulp.start('cssInject');
 });
 
-watch('./docs/assets/scripts/**/*.js', function(){
-gulp.start('reloadWebpack');
-});
 
 });
-
-gulp.task('cssInject', ['styles'], function(){
-  return gulp.src('./app/temp/styles/styles.css')
-  .pipe(browserSync.stream());
-});
-
-gulp.task('reloadWebpack', ['scripts'], function () {
-  browserSync.reload();
-})
